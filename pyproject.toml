@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "qr-code-generator-api"
+version = "0.1.0"
+description = "Based on our conversation, the required project involves creating an endpoint that serves the specific purpose of generating QR codes based on various inputs provided by the user, such as URL, text, contact information, and more. This endpoint is not only capable of generating QR codes but also allows the user to customize aspects of the QR code like its size, color, and error correction level to suit different needs and aesthetic preferences. Once generated, the QR code image can be returned in different formats, with PNG being specified as a preferred format by the user. To implement this solution, the following technology stack has been proposed: Python as the programming language due to its robust libraries and tools for QR code generation, FastAPI for building the API endpoint due to its simplicity and performance for this type of task, PostgreSQL as the database choice for storing any necessary data related to the QR codes or user preferences, and Prisma as the ORM for seamless interaction with the database ensuring efficient data handling and operations. Through utilizing the 'qrcode' library in Python, customization of QR codes will be achieved, including aspects like size (300x300 pixels for clarity), color (dark blue for modernity and contrast), and error correction level (Quartile for reliability even when the code is partially obscured). The project necessitates a detailed understanding of the user’s requirements for QR code customization and a well-structured implementation plan leveraging the chosen tech stack."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+pillow = "*"
+fastapi = "^0.78.0"
+prisma = "*"
+pydantic = "*"
+qrcode = "*"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
